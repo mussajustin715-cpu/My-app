@@ -26,8 +26,6 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
-        working-directory: ./lAppUIKit-master
 
       - name: Build Release APK
         run: flutter build apk --release
-        working-directory: ./lAppUIKit-master
