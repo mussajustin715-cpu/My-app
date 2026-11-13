@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Java
@@ -26,6 +26,8 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
+        working-directory: ./lAppUIKit-master
 
-      - name: Build APK
+      - name: Build Release APK
         run: flutter build apk --release
+        working-directory: ./lAppUIKit-master
