@@ -3,7 +3,8 @@ name: Build Flutter APK
 on:
   push:
     branches: [ "main" ]
-   jobs:
+
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -30,4 +31,3 @@ on:
       - name: Build Release APK
         run: flutter build apk --release
         working-directory: ./FLUTTERSOCIALAPPUI-master
-
