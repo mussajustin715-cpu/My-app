@@ -1,0 +1,4 @@
+== Install Flutter dependencies ==
+
+Build failed :|
+Failed to install dependencies for pubspec file in /Users/builder/clone. Directory was not found
